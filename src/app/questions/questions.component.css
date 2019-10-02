@@ -1,0 +1,36 @@
+.container{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.3em;
+}
+.container *{
+  font-size: 1em;
+}
+/*.answer-container, .answer-container *{
+  font-size: 1em;
+}*/
+.answer-container{
+  margin-top: 25px;
+}
+.question-box{
+  border: 1px solid #eee;
+  max-height: 400px;
+  box-shadow: 1px 1px 20px #c5c5c5;
+  padding: 100px;
+
+}
+.action-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  align-items: center;
+}
+.title{
+  margin-bottom: 20px;
+}
+.next-que{
+  width: 100px;
+}

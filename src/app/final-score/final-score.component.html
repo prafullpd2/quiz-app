@@ -1,0 +1,25 @@
+
+  <div class="container col-12">
+    <div class="score-container col-6 horizontal-center">
+      <div class="score">
+        <span>Your Final Score: </span> <span>{{score}}</span>
+      </div>
+      <div>Answers</div>
+      <div class="answer-loop" *ngFor="let question of queList" [class.red-text]="question.answer !== question.usersAnswer || question.usersAnswer === null ">
+        <div class=" col-12">
+          <span class="display-inline-block col-2">Q {{ question.id}}.</span>
+          <span class="display-inline-block que ">
+            <span >{{question.leftOperand}}</span> <span>{{question.operation}}</span> <span>{{question.rightOperand}}</span>
+          </span>
+          </div>
+        <div class="answers-container col-12" >
+          <div class="display-inline-block col-6">Correct Answer: <span>{{question.answer}}</span></div>
+          <div class="display-inline-block col-6">Your Answer: <span>{{question.usersAnswer}}</span></div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+

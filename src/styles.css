@@ -1,1 +1,147 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Calibri", sans-serif;
+  font-size: 16px;
+  /*border: transparent;*/
+}
+body{
+  height: 100vh;
+  /*background: #edef9f4f;*/
+  background: #e8d6ac2e;
+
+}
+
+/*div{
+  border: 1px solid red;
+}
+a{
+  border: 1px solid black;
+}*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+/******************************************* Generic CSS *******************************************/
+.float-right{
+  float: right;
+}
+.float-left{
+  float: left;
+}
+.display-inline{
+  display: inline;
+}
+.display-inline-block{
+  display: inline-block;
+}
+.display-none{
+  display: none;
+}
+.display-block{
+  display: block;
+}
+.clearfix {
+  overflow: auto;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.center-align {
+  text-align: center;
+}
+.vertical-align-top {
+  vertical-align: top;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.horizontal-center{
+  margin: 0 auto;
+}
+.vertical-centre{
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.vertical-centre-text{
+  line-height: 100%;
+}
+.container{
+  position: relative;
+}
+.text-middle{
+  text-align: center;
+}
+.btn{
+  background-color: #fff5f0;
+  margin: 3px;
+  padding: 10px;
+  border-radius: 5px;
+}
+button[disabled].btn{
+  background-color: #36a47d;
+}
+
+.btn.btn-submit, .btn.btn-green{
+    background-color: #27d484;
+    color: white;
+}
+.form-control{
+  margin: 3px;
+}
+form span.label{
+  padding: 10px;
+}
+form input.input{
+  padding: 10px;
+}
+input.ng-touched.ng-invalid{
+  border: 1px solid red;
+}
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 100;
+  cursor: pointer;
+}
+.overlay .spinner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+.alert{
+  color: red;
+}
+.alert.success{
+  color: green;
+}
+
+
+
+
+

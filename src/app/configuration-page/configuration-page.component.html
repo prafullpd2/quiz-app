@@ -1,0 +1,15 @@
+
+
+  <div class="form-group col-5 horizontal-center">
+    <div class="input-model">
+      <label for="number-of-questions" class="col-7">NO OF QUESTIONS:</label> <input id="number-of-questions" [formControl]="questions" class="col-5 number-of-questions" type="number" min="1" max="30" >
+    </div>
+    <div class="input-model">
+      <label for="range" class="col-7">RANGE:</label> <input id="range" [formControl]="range"  class="col-5 range" type="number" min="10" max="15" >
+    </div>
+    <div class="col-12 start-btn">
+      <button class="btn" (click)="onStartClick()">Start</button>
+    </div>
+  </div>
+
+

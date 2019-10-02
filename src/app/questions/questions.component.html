@@ -1,0 +1,21 @@
+
+  <div class="container col-8 horizontal-center">
+      <div class="question-box col-10 horizontal-center">
+          <div class="title">Answer the following arithmetic puzzle.</div>
+          <span class="question-number col-2 display-inline-block">Q <span>{{question.id}}</span>.</span>
+          <span class="col-10 question-desc display-inline-block">{{question.leftOperand}} {{question.operation}} {{question.rightOperand}} = </span>
+          <div class="answer-container">
+            <label for="answer" class="col-2">Your Answer: </label> <input type="text" [formControl]="answer" (keypress)="onKeyPress($event)" placeholder="answer" id="answer" class="answer col-9">
+          </div>
+          <div>
+            <div class="action-box">
+              <div class="questions-left display-inline-block">Questions Left: <span>{{questionsLeft}}</span></div>
+              <div class="display-inline-block current-score"> Score: <span>{{score}}</span></div>
+              <button *ngIf="questionsLeft>0" class="btn next-que btn-green"  (click)="onNextClick()">NEXT</button>
+              <button *ngIf="questionsLeft<=0"class="btn next-que btn-green" (click)="onSubmit()">Submit</button>
+
+            </div>
+          </div>
+      </div>
+  </div>
+
